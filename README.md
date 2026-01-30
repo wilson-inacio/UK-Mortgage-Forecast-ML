@@ -33,13 +33,13 @@ The dataset is comprised of four files which were sourced from official UK publi
 |ONS|Inflation(CPIH).csv|Monthly Consumer Price Index including Housing|
 
 ## Notebook Structure
-**1. Data Loading & Preprocessing** – Load CSVs, clean column names, convert dates, align monthly data
-**2. Feature Engineering** – Create lagged mortgage rates, rolling averages, and other predictive features
-**3. Train/Test Split** – Use time-aware split to avoid future data leakage
-**4. Baseline Model: Linear Regression** – Simple regression to establish a baseline
-**5. ML Model: Random Forest** – More advanced model to capture non-linear trends
-**6. Model Evaluation** – Compare predictions using metrics like MAE, RMSE
-**7. Model Saving & Inference Function** – Save trained models and create a reusable prediction function
+1. **Data Loading & Preprocessing** – Load CSVs, clean column names, convert dates, align monthly data
+2. **Feature Engineering** – Create lagged mortgage rates, rolling averages, and other predictive features
+3. **Train/Test Split** – Use time-aware split to avoid future data leakage
+4. **Baseline Model: Linear Regression** – Simple regression to establish a baseline
+5. **ML Model: Random Forest** – More advanced model to capture non-linear trends
+6. **Model Evaluation** – Compare predictions using metrics like MAE, RMSE
+7. **Model Saving & Inference Function** – Save trained models and create a reusable prediction function
 
 ## Conclusion
 This project demonstrates a complete end-to-end machine learning workflow for predicting UK mortgage rates using official economic data. The workflow is modular and can be converted into a production-ready pipeline, supporting financial decisions such as refinancing timing, product pricing, and risk assessment. Both Linear Regression and Random Forest models were implemented to showcase baseline and more advanced modeling approaches.
