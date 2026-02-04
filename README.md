@@ -37,9 +37,12 @@ The dataset is comprised of four files which were sourced from official UK publi
 2. **Feature Engineering** – Create lagged mortgage rates, rolling averages, and other predictive features
 3. **Train/Test Split** – Use time-aware split to avoid future data leakage
 4. **Baseline Model: Linear Regression** – Simple regression to establish a baseline
-5. **ML Model: Random Forest** – More advanced model to capture non-linear trends
+5. **Machine Learning Model: Random Forest** – More advanced model to capture non-linear trends
 6. **Model Evaluation** – Compare predictions using metrics like MAE, RMSE
-7. **Model Saving & Inference Function** – Save trained models and create a reusable prediction function
+7. **Machine Learning Pipeline** - Create a Machine Learning Pipeline that can modularize all the steps taken so far
+8. **Model Saving & Inference Function** – Save trained models and create a reusable prediction function
+9. **Findings** - Findings and Take-aways
+10. **Conclusions and Next Steps** - Conclusion of the project, limitations and future work
 
 ## Conclusion
 This project demonstrates a complete end-to-end machine learning workflow for predicting UK mortgage rates using official economic data. The workflow is modular and can be converted into a production-ready pipeline, supporting financial decisions such as refinancing timing, product pricing, and risk assessment. Both Linear Regression and Random Forest models were implemented to showcase baseline and more advanced modeling approaches.
