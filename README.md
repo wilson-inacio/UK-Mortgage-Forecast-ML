@@ -44,8 +44,27 @@ The dataset is comprised of four files which were sourced from official UK publi
 9. **Findings** - Findings and Take-aways
 10. **Conclusions and Next Steps** - Conclusion of the project, limitations and future work
 
+## Results and Analysis
+For this project three models were compared: a **Naive Model** that predicts next month values from previous month values, a **Linear Regression** used as a baselinbe, since the data exhibits a clear linear trend over time, and a **Random Forest** to test whether a more flexible, non-linear model could improve performance. This second model was also tuned to optimize its hyperparameters and verify performance with the best possible configuration.
+**Findings**
+- The Linear Regression model improved upon the Naive model by reducing forecasting error by approximately 50%.
+- The Linear Regression model captured the main trend effectively and performed comparably to the tuned Random Forest.
+- The Random Forest did not significantly outperform Linear Regression, confirming that the relationship in the data is primarily linear.
+
 ## Conclusion
-This project demonstrates a complete end-to-end machine learning workflow for predicting UK mortgage rates using official economic data. The workflow is modular and can be converted into a production-ready pipeline, supporting financial decisions such as refinancing timing, product pricing, and risk assessment. Both Linear Regression and Random Forest models were implemented to showcase baseline and more advanced modeling approaches.
+This project demonstrates a complete end-to-end machine learning workflow for predicting UK mortgage rates using official economic data. The workflow is modular and can be converted into a production-ready pipeline, supporting financial decisions such as refinancing timing, product pricing, and risk assessment. Both Linear Regression and Random Forest models were implemented to showcase baseline and more advanced modeling approaches.<br>
+Linear Regression provides a simple and interpretable model for this dataset, while Random Forest offers no substantial advantage in predictive accuracy. This validates the choice of Linear Regression for this task and highlights the value of using a baseline model for comparison.<br>
+The significant improvement of the Linear Regression model of approximately 50% error forecasting reduction compared to a naive baseline also demonstrates that incorporating macroeconomic indicators (Bank Rate and CPIH) alongside lag features substantially improves predictive accuracy.
+
+|Model|2 Year MAE|2 Year RMSE|5 Year MAE|5 Year RMSE|
+|-|-|-|-|-|
+|Naive Model|0.22|0.36|0.20|0.32|
+|Linear Regression|0.11|0.19|0.10|0.17|
+|Random Forest|0.24|0.12|0.23|0.13|
+|Tuned Random Forest|0.23|0.35|0.23|0.35|
+###### Notes:
+###### - Lower MAE and RMSE indicate better predictions.
+###### - Linear Regression outperforms Random Forest on both targets, confirming the linear trend in the data.
 
 ## Licences
 This project is released under the MIT License.
